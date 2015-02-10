@@ -6,6 +6,10 @@ before_script:
 - npm install -g bower grunt-cli
 - bower install
 services: mongodb
+# only run tests on master branch
+branches:
+  only:
+    - master
 deploy:
   api_key:
     secure: MVDdrVJOCS/ekTkWyGXPezgbtO0bcqjqyhlpWa5QModsKnRPM8Z6ruZxLJlZuGzMdW4tCh/MLXWggvIow+N44iQr/NJvkZSBRmontuvXIUcD6+mGnuN3uaCHo6EGr8QFCoEQESH7MiTHvc/9ryRb6LBQA47tZgHr+t++rlw1DiA=
